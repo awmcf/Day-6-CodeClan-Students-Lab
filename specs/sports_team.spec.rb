@@ -5,7 +5,7 @@ require_relative('../sports_team')
 class TestSportsTeam < MiniTest::Test
 
   def setup
-    @team = SportsTeam.new("Manchester United", ["Paul Pogba", "David De Gea", "Marcus Rashford"], "Ole Gunnar Solskjaer")
+    @team = SportsTeam.new("Manchester United", ["Paul Pogba", "David De Gea", "Marcus Rashford"], "Ole Gunnar Solskjaer", 0)
     end
 
 
