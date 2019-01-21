@@ -4,11 +4,12 @@ require_relative('../code_clan_students')
 
 class TestCodeClanStudent < MiniTest::Test
 
-  def setup
-    @student = Student.new("Aaron", "E28")
-  end
+  # def setup
+  #   @student = Student.new("Aaron", "E28")
+  # end
 
   def test_get_name
+    student = Student.new("Aaron", "E28")
     assert_equal("Aaron", @student.name())
   end
 
@@ -26,7 +27,10 @@ def test_set_cohort
   assert_equal("E29", @student.cohort)
 end
 
-
+# def test_return_string
+#   @student.says = ("I can talk!")
+#   assert_equal("I can talk!", @student())
+# end
 
 
 
