@@ -10,18 +10,21 @@ class TestSportsTeam < MiniTest::Test
 
 
     def test_get_team_name
-      assert_equal("Manchester United", @team.team_name())
+      assert_equal("Manchester United", @team.get_team_name())
     end
 
 
     def test_get_players
-      assert_equal(["Paul Pogba", "David De Gea", "Marcus Rashford"], @team.players)
+      assert_equal(["Paul Pogba", "David De Gea", "Marcus Rashford"], @team.get_players)
     end
 
     def test_get_coach_name
-      assert_equal("Ole Gunnar Solskjaer", @team.coach())
+      assert_equal("Ole Gunnar Solskjaer", @team.get_coach())
     end
 
+    def test_set_new_coach
+      assert_equal("Mauricio Pochettino", @team.new_coach("Mauricio Pochettino"))
+    end
 end
 
   # Make a class to represent a Team that has the properties Team name (String), Players (array of strings) and a Coach (String).
