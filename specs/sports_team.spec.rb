@@ -27,7 +27,18 @@ class TestSportsTeam < MiniTest::Test
       assert_equal("Mauricio Pochettino", @team.coach())
     end
 
-end
+    def test_add_player
+      before_added_player = @team.players.length
+      before_added_player += 1
+      @team.add_player("Romelu Lukaku")
+      assert_equal(before_added_player, @team.players.length)
+    end
+
+    def test_check_player_in_players
+      assert_equal(["Paul Pogba", "David De Gea", "Marcus Rashford"], @team.players)
+    end
+
+  end
 
   # Make a class to represent a Team that has the properties Team name (String), Players (array of strings) and a Coach (String).
   # For each property in the class make a getter method that can return them.
