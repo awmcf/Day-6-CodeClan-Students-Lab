@@ -38,6 +38,10 @@ class TestSportsTeam < MiniTest::Test
       assert_equal(["Paul Pogba", "David De Gea", "Marcus Rashford"], @team.players)
     end
 
+    def test_add_points
+      assert_equal(3, @team.add_points("win"))
+    end
+
   end
 
   # Make a class to represent a Team that has the properties Team name (String), Players (array of strings) and a Coach (String).
