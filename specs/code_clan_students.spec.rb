@@ -31,7 +31,9 @@ def test_return_string
   assert_equal("I can talk!", @student.talk)
 end
 
-
+def test_say_favorite_language
+  assert_equal("I love Ruby!", @student.say_favorite_language("Ruby"))
+end
 
 
 end

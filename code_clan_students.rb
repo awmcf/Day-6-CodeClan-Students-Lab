@@ -7,8 +7,6 @@ class Student
     @cohort = cohort
   end
 
-
-
   # def get_name
   #   return @name
   # end
@@ -27,6 +25,10 @@ class Student
 
   def talk
     return "I can talk!"
+  end
+
+  def say_favorite_language(fav_lang)
+    return @student = "I love #{fav_lang}!"
   end
 
 end
