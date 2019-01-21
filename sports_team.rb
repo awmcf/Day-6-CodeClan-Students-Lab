@@ -1,6 +1,6 @@
 class SportsTeam
 
-
+attr_accessor :team_name, :players, :coach
 
 
   def initialize(team_name, players, coach)
@@ -9,20 +9,20 @@ class SportsTeam
     @coach = coach
   end
 
-  def get_team_name
-    return @team_name
-  end
-
-  def get_players
-    return @players
-  end
-
-  def get_coach
-    return @coach
-  end
-
-  def new_coach(new_coach)
-    return @coach = new_coach
-  end
+  # def get_team_name
+  #   return @team_name
+  # end
+  #
+  # def get_players
+  #   return @players
+  # end
+  #
+  # def get_coach
+  #   return @coach
+  # end
+  #
+  # def new_coach(new_coach)
+  #   return @coach = new_coach
+  # end
 
 end
