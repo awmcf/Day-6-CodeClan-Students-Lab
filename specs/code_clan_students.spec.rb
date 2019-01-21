@@ -5,9 +5,12 @@ require_relative('../code_clan_students')
 class TestCodeClanStudent < MiniTest::Test
 
   def setup
-    @student = CodeClanStudent.new("Aaron", "E28")
+    @student = Student.new("Aaron", "E28")
   end
 
+  def test_name
+    assert_equal("Aaron", @student.name())
+  end
 
 
 
