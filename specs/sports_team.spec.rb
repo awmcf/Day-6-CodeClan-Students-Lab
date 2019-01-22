@@ -4,7 +4,7 @@ require_relative('../sports_team')
 
 class TestSportsTeam < MiniTest::Test
 
-  def setup
+    def setup
     @team = SportsTeam.new("Manchester United", ["Paul Pogba", "David De Gea", "Marcus Rashford"], "Ole Gunnar Solskjaer", 0)
     end
 
@@ -30,6 +30,7 @@ class TestSportsTeam < MiniTest::Test
     def test_add_player
       before_added_player = @team.players.length
       before_added_player += 1
+      #why can't this variable be combined into @team.players.length +=1 ?
       @team.add_player("Romelu Lukaku")
       assert_equal(before_added_player, @team.players.length)
     end

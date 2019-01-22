@@ -32,7 +32,7 @@ class SportsTeam
   end
 
   def add_points(result)
-    if result == "win"
+    if result.downcase == "win"
       @points += 3
     end
   end
